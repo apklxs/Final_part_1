@@ -71,10 +71,11 @@ string [] CreateShortArray(string [] array, int lengthnewarray)
 
 int FindElementsArrayLengthLessFour(string [] array)
  {
-  int count = 0;
+  int count = 0, limitLength = 4;
+
   for(int j = 0; j < array.Length; j++)
    { 
-     if (array[j].Length < 4)
+     if (array[j].Length < limitLength)
      {
       count = count+1;
      }
